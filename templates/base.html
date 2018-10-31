@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div class="header">  
+        <div class="heading">
+            <a class='main-links' href="{{ url_for('index') }}">Home</a>
+            <a class='main-links' href="{{ url_for('blog') }}">All posts</a>
+            <a class='main-links' href=" {{ url_for('newpost') }} ">Add a new post</a>
+        </div>
+        
+        <div class='logins'>
+                <a class='main-links' href="{{ url_for('login') }}">Login</a>
+                <a class='main-links' href="{{ url_for('logout') }}">Logout</a>
+        </div>
+        <div class="clear">
+
+        </div>
+
+        <div class="mainpage">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

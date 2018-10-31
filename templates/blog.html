@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    {% for post in posts %}
+    <div class="seperator">
+    <a class="link" href="{{ url_for('singlepost',post_id=post.id) }}">
+    <h1 class="head" >{{ post.title }} </h1>
+    </a>    
+    <p class="text">{{ post.body }}</p>
+    <p> written by <a href="{{ url_for('singleuser',user_name=post.owner) }}">{{ post.owner }}</a></p>
+    </div>
+    {% endfor %}
+
+
+{% endblock %}

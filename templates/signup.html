@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Sign up</h1>
+<form method="POST" action="{{ url_for('signup') }}" >
+
+    <table>
+<tr>
+    <td>
+        <label for="user">Username</label>
+    </td>
+    <td>     
+        <input type="text" name="user" id='user'><br>
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="pass">Password</label>
+    </td>
+    <td>     
+        <input type="password" name="pass" id='pass'>
+    </td>    
+</tr>
+<tr>  
+    <td>      
+        <label for="pass">Verify Password</label>
+    </td>
+    <td>    
+        <input type="password" name="re-pass" id='pass'>
+    </td>    
+</tr>
+<tr>
+    <td>
+        <button type="submit">Sign Up</button>
+    </td>
+</tr>
+</table>
+{% if err %}
+<p class="error">{{ err }}</p>
+{% endif %}
+
+</form>
+
+{% endblock %}

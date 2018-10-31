@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="singlepost">
+    <h1>{{ entry.title }}</h1>
+    <p >{{ entry.body }}</p>
+    <p> written by <a href="{{ url_for('singleuser',user_name=entry.owner) }}">{{ entry.owner }}</a></p>
+</div>
+
+
+{% endblock %}

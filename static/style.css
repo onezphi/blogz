@@ -1,0 +1,120 @@
+/* to remove browser custom paddind and margin */
+*{
+    padding:0px;
+    margin:0px
+}
+
+
+/* to style the black buttons like login,home,all posts */
+.main-links{
+    text-decoration: none;
+    padding:10px 30px;
+    background-color: black;
+    color:white;
+    font-size: 30px;
+    border-radius: 10px;
+
+}
+
+/* style of buttons to stay on left side */
+
+.heading{
+    width:60%;
+    float: left;
+}
+
+
+/* main page style to keep distance from both sides and adjust content in middle */
+.mainpage{
+    width:80%;
+    margin:50px auto;
+}
+
+/* style of links to have no underline and style */
+.link{
+    text-decoration: none;
+    padding:10px 20px;
+
+}
+
+/* changing  color on hover of button */
+.link:hover{
+    color:black;
+}
+/* style to style each post and have that black underline after every post */
+.seperator{
+    border-bottom: 2px solid black;
+    padding:10px 0px;
+}
+
+/* adjusting the new post styles to show in the center */
+.form{
+    width:60%;
+    margin:50px auto;
+    text-align: center;
+}
+
+/* style for title of post */
+#title{
+    display: inline-block;
+    margin:10px;
+    font-size: 20px;
+    padding:10px;
+}
+/* style of submit button on the post page */
+.submit-btn{
+    display: block;
+    border:none;
+    background-color: #000;
+    color:white;
+    font-size: 20px;
+    margin:10px auto;
+    padding:10px;
+    border-radius: 10px;
+}
+/* style of body of the post */
+textarea{
+    padding: 10px;
+}
+/* style of single post page */
+.singlepost{
+    width:100%;
+    text-align: center
+}
+
+/* heading of post in single post page */
+.singlepost h1{
+    margin:20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize
+    
+}
+/* body of post in single post page */
+.singlepost p{
+    font-size: 20px;
+    margin:5px 10px;
+    padding:5px
+}
+
+/* red error message on login ,new post and signup page */
+.error{
+    color:red;
+    font-size: 20px;
+    margin:10px;
+}
+
+/* login and logout style to adjust on right side  */
+.logins {
+    float: right;
+}
+/* to seperate buttons on header from main content */
+.header{
+    width:80%;
+    margin:30px auto
+}
+
+/* to clear floating effect of divs */
+.clear{
+    clear: both;
+}
